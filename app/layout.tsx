@@ -11,9 +11,9 @@ import { ThemeContextProvider } from "@/context/ThemeContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Connor Lamont | Engineering Portfolio",
+  title: "Connor Lamont | Software Engineering | Developer Portfolio",
   description:
-    "Connor Lamont is a full-stack software engineer / developer with 5 years of experience",
+    "Connor Lamont is a senior full-stack software engineer / developer with 5 years of experience",
   icons: {
     icon: [
       {
