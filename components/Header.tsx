@@ -1,7 +1,7 @@
 "use client";
 
 import { links } from "@/lib/data";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import clsx from "clsx";
@@ -11,7 +11,10 @@ import { useThemeContext } from "@/lib/hooks/useThemeContext";
 const Header = () => {
   const { activeSection, setActiveSection, setLastSectionClicked } =
     useActiveSectionContext();
-
+  const { theme } = useThemeContext();
+  useEffect(() => {
+    document.documentElement.classList.add(theme === "dark" ? "dark" : "light");
+  }, [theme]);
   return (
     <header className="z-[999] relative">
       <motion.div
