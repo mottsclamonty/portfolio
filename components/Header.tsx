@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/lib/hooks/useActiveSectionContext";
+import { useThemeContext } from "@/lib/hooks/useThemeContext";
 
 const Header = () => {
   const { activeSection, setActiveSection, setLastSectionClicked } =
@@ -32,7 +33,8 @@ const Header = () => {
                 className={clsx(
                   "flex w-full items-center justify-center p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-100",
                   {
-                    "text-gray-950 dark:text-gray-100": activeSection === link.name,
+                    "text-gray-950 dark:text-gray-100":
+                      activeSection === link.name,
                   }
                 )}
                 href={link.hash}
