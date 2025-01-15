@@ -57,7 +57,7 @@ const Introduction = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Connor.</span> I&apos;m a{" "}
+        <span className="font-bold">Hi, I&apos;m Connor.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack engineer</span> with{" "}
         <span className="font-bold">5 years</span> of experience. I love
         tackling challenging problems and collaborating to build tools that
@@ -68,7 +68,7 @@ const Introduction = () => {
         </span>
         . <br />
         <br />
-        I'm looking forward to connecting and creating something impactful
+        I&apos;m looking forward to connecting and creating something impactful
         together!
       </motion.h1>
 
